@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="simon.css">
+</head>
+<body>
+  <h1>Raviranjan pathak</h1>
+  <h1>Simon Says Game</h1>
+  <h3>Press any key to start game </h3>
+  <div class="container">
+    <div class="box_line1">
+      <div class="btn red " type="button" id="red"></div>
+      <div class="btn yellow" type="button" id="yellow"></div>
+    </div>
+    <div class="box_line2">
+      <div class="btn green" type="button" id="green"></div>
+      <div class="btn purple" type="button" id="purple"></div>
+    </div>
+    
+    
+  </div>
+<button onclick="openDialog() " id="info">How to play</button>
+<div id="dialog" class="dialog-box">
+  <p><b>How to Play:</b> </p>
+  <p>.Click Start (or press a key).</p>
+  <p>.The game plays a sequence (e.g., Red → Green).</p>
+  <p>.You click the buttons in the same order.</p>
+  <p>.If you're correct, the next round adds a new color.</p>
+  <p>.If you click the wrong color → Game Over.</p> 
+  <button onclick="closeDialog()">Close</button>
+</div>
+  <script src="simon.js"></script>
+</body>
+</html>
+ 
